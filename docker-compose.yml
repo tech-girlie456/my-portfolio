@@ -1,0 +1,10 @@
+services:
+  portfolio:
+    image: nginx:alpine
+    container_name: khushi-portfolio
+    ports:
+      - "8083:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+      - ./site/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped

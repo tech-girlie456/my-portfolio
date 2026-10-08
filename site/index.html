@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Khushi Pudasaini — Cybersecurity student focused on network security, ethical hacking, digital forensics, and defensive security." />
+  <meta name="theme-color" content="#090b1a" />
+  <title>Khushi Pudasaini | Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Khushi Pudasaini home">
+        <span class="brand-mark">KP</span>
+        <span class="brand-text">khushi<span>.sec</span></span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav id="mainNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#labs">Labs</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Let's connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Available for cybersecurity opportunities</span>
+          </div>
+
+          <p class="kicker">CYBERSECURITY · NETWORK SECURITY · DIGITAL FORENSICS</p>
+
+          <h1>
+            Hi, I'm <span class="gradient-text">Khushi Pudasaini.</span>
+          </h1>
+
+          <p class="hero-lead">
+            A BSc (Hons) Ethical Hacking & Cyber Security student exploring how systems are
+            <strong>attacked, investigated, and secured.</strong>
+          </p>
+
+          <p class="hero-sub">
+            Currently in Semester 4 at Softwarica College of IT & E-Commerce, affiliated with
+            Coventry University. I build practical skills through CTFs, security labs,
+            network simulations, forensics, and secure application development.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore projects <span>↗</span></a>
+            <a href="#contact" class="btn btn-ghost">Contact me</a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <span class="meta-value">2027</span>
+              <span class="meta-label">Expected graduation</span>
+            </div>
+            <div>
+              <span class="meta-value">Semester 4</span>
+              <span class="meta-label">Current level</span>
+            </div>
+            <div>
+              <span class="meta-value">LavenderBliss🪻</span>
+              <span class="meta-label">CTF nickname</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="cyber-card">
+            <div class="visual-toolbar">
+              <span></span><span></span><span></span>
+              <p>security_profile.py</p>
+            </div>
+
+            <div class="visual-canvas">
+              <svg class="network-graphic" viewBox="0 0 560 560" role="img" aria-label="Animated cybersecurity network graphic">
+                <defs>
+                  <linearGradient id="ringGradient" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#42b6ff"/>
+                    <stop offset="100%" stop-color="#9c62ff"/>
+                  </linearGradient>
+                  <filter id="softGlow">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+
+                <circle cx="280" cy="280" r="205" class="orbit orbit-a"/>
+                <circle cx="280" cy="280" r="155" class="orbit orbit-b"/>
+                <circle cx="280" cy="280" r="105" class="orbit orbit-c"/>
+
+                <g class="lines">
+                  <line x1="280" y1="280" x2="122" y2="176"/>
+                  <line x1="280" y1="280" x2="448" y2="160"/>
+                  <line x1="280" y1="280" x2="433" y2="390"/>
+                  <line x1="280" y1="280" x2="146" y2="415"/>
+                  <line x1="122" y1="176" x2="448" y2="160"/>
+                  <line x1="146" y1="415" x2="433" y2="390"/>
+                </g>
+
+                <g class="nodes" filter="url(#softGlow)">
+                  <circle cx="122" cy="176" r="10"/>
+                  <circle cx="448" cy="160" r="8"/>
+                  <circle cx="433" cy="390" r="11"/>
+                  <circle cx="146" cy="415" r="8"/>
+                  <circle cx="280" cy="78" r="7"/>
+                  <circle cx="280" cy="480" r="7"/>
+                </g>
+
+                <g class="center-badge">
+                  <circle cx="280" cy="280" r="64"/>
+                  <path d="M280 236l38 14v30c0 28-16 48-38 60-22-12-38-32-38-60v-30l38-14z"/>
+                  <path d="M264 280l12 12 23-26"/>
+                </g>
+              </svg>
+
+              <div class="floating-chip chip-one"><span>01</span> NETWORK</div>
+              <div class="floating-chip chip-two"><span>02</span> FORENSICS</div>
+              <div class="floating-chip chip-three"><span>03</span> DEFENSE</div>
+
+              <div class="terminal-snippet">
+                <p><span class="prompt">khushi@lab:~$</span> whoami</p>
+                <p class="terminal-output">security analyst in training</p>
+                <p><span class="prompt">khushi@lab:~$</span> focus --current</p>
+                <p class="terminal-output">network_security · forensics · pentesting<span class="cursor">_</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="about">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <p class="section-index">01 / ABOUT</p>
+          <h2>Security is most interesting when theory becomes <span>something you can test.</span></h2>
+        </div>
+
+        <div class="about-copy reveal">
+          <p>
+            I am a cybersecurity student based in Kathmandu, Nepal, with a strong interest in
+            network security, ethical hacking, digital forensics, penetration testing, and defensive security.
+          </p>
+          <p>
+            I learn best through hands-on work: building networks, inspecting packet captures,
+            analyzing files and memory, exploring vulnerable applications, participating in CTFs,
+            and developing software with security controls in mind.
+          </p>
+
+          <div class="focus-grid">
+            <article>
+              <span class="mini-icon">⌁</span>
+              <h3>Target roles</h3>
+              <p>Security Analyst / Network Security Specialist</p>
+            </article>
+            <article>
+              <span class="mini-icon">◎</span>
+              <h3>Current goal</h3>
+              <p>Build practical experience across security operations, infrastructure, and incident investigation.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell panel-section" id="skills">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <p class="section-index">02 / SKILLS</p>
+            <h2>Technical <span>arsenal.</span></h2>
+          </div>
+          <p class="section-note">Skills built through academic work, labs, CTFs, projects, and independent practice.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-no">01</span>
+              <div class="skill-icon">⌘</div>
+            </div>
+            <h3>Network Security</h3>
+            <div class="tag-list">
+              <span>TCP/IP</span><span>Nmap</span><span>Wireshark</span><span>NetworkMiner</span>
+              <span>VLANs</span><span>EIGRP</span><span>Routing</span><span>Switching</span>
+              <span>Cisco ASA</span><span>Segmentation</span><span>Wireless</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-no">02</span>
+              <div class="skill-icon">#</div>
+            </div>
+            <h3>Ethical Hacking</h3>
+            <div class="tag-list">
+              <span>Reconnaissance</span><span>Enumeration</span><span>Vulnerability Assessment</span>
+              <span>Web Security</span><span>SSRF</span><span>Active Directory</span><span>Responder</span>
+              <span>ffuf</span><span>dirsearch</span><span>John the Ripper</span><span>CyberChef</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-no">03</span>
+              <div class="skill-icon">◈</div>
+            </div>
+            <h3>Digital Forensics</h3>
+            <div class="tag-list">
+              <span>Volatility 2/3</span><span>Autopsy</span><span>FTK Imager</span><span>ALEAPP</span>
+              <span>Memory Analysis</span><span>PCAP Analysis</span><span>Metadata</span>
+              <span>binwalk</span><span>ExifTool</span><span>steghide</span><span>zsteg</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-no">04</span>
+              <div class="skill-icon">{ }</div>
+            </div>
+            <h3>Development & Systems</h3>
+            <div class="tag-list">
+              <span>Python</span><span>JavaScript</span><span>React</span><span>Node.js</span>
+              <span>MySQL</span><span>SQLite</span><span>REST APIs</span><span>Linux</span>
+              <span>Windows</span><span>WSL</span><span>Docker</span><span>Git/GitHub</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="projects">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <p class="section-index">03 / PROJECTS</p>
+            <h2>Selected <span>builds.</span></h2>
+          </div>
+          <p class="section-note">Projects where networking, secure coding, cryptography, and defensive security come together.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured reveal">
+            <div class="project-visual network-panel">
+              <svg viewBox="0 0 700 360" aria-hidden="true">
+                <g class="rack">
+                  <rect x="55" y="70" width="140" height="80" rx="14"/>
+                  <rect x="280" y="40" width="140" height="80" rx="14"/>
+                  <rect x="505" y="70" width="140" height="80" rx="14"/>
+                  <rect x="170" y="225" width="140" height="80" rx="14"/>
+                  <rect x="390" y="225" width="140" height="80" rx="14"/>
+                </g>
+                <g class="network-links">
+                  <path d="M195 110L280 80M420 80L505 110M125 150L220 225M575 150L480 225M310 265L390 265"/>
+                </g>
+                <g class="network-dots">
+                  <circle cx="125" cy="110" r="8"/><circle cx="350" cy="80" r="8"/>
+                  <circle cx="575" cy="110" r="8"/><circle cx="240" cy="265" r="8"/>
+                  <circle cx="460" cy="265" r="8"/>
+                </g>
+              </svg>
+              <span class="visual-label">ENTERPRISE NETWORK</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta"><span>01</span><span>NETWORK SECURITY</span></div>
+              <h3>SecureNet Enterprise Network Infrastructure</h3>
+              <p>
+                Designed and simulated a secure enterprise network for NovaCore Solutions Ltd.
+                using a three-tier architecture, branch connectivity, VLANs, EIGRP, Cisco ASA,
+                wireless infrastructure, and segmented security controls.
+              </p>
+              <div class="project-stack"><span>Cisco Packet Tracer</span><span>EIGRP</span><span>ASA</span><span>VLANs</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>02</span><span>SECURE APP</span></div>
+            <h3>Secure Voting System</h3>
+            <p>
+              Electronic voting system with SHA-256 hashing, SSL communication, role-based functionality,
+              MySQL persistence, graph-based election representation, and Naor-Shamir 2-of-2 secret sharing.
+            </p>
+            <div class="project-stack"><span>Python</span><span>MySQL</span><span>Tkinter</span><span>SSL</span><span>NetworkX</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>03</span><span>STEGANOGRAPHY</span></div>
+            <h3>Advanced Steganography Tool</h3>
+            <p>
+              Desktop application for hiding information in digital media using LSB steganography,
+              XOR-based encryption, SQLite, a Tkinter interface, file handling, and automated testing.
+            </p>
+            <div class="project-stack"><span>Python</span><span>Tkinter</span><span>SQLite</span><span>67 tests</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>04</span><span>SECURE COMMS</span></div>
+            <h3>Secure Chat Application</h3>
+            <p>
+              Built a client-server communication application exploring protected communication,
+              authentication concepts, and encrypted networking workflows.
+            </p>
+            <div class="project-stack"><span>Python</span><span>Networking</span><span>Authentication</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>05</span><span>DEFENSIVE SECURITY</span></div>
+            <h3>Honeypot / HoneyBadger</h3>
+            <p>
+              Honeypot-oriented security project created to observe suspicious activity,
+              study attacker behavior, and explore threat detection from a defensive perspective.
+            </p>
+            <div class="project-stack"><span>Python</span><span>Monitoring</span><span>Threat Detection</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>06</span><span>FULL STACK</span></div>
+            <h3>DharaBatti</h3>
+            <p>
+              Platform connecting homeowners and property managers with verified handymen,
+              designed with authentication, JWT, authorization, role-based access, sanitization,
+              private routes, backups, SFTP, cookie security, and DDoS considerations.
+            </p>
+            <div class="project-stack"><span>React</span><span>Node.js</span><span>MySQL</span><span>JWT</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell panel-section" id="labs">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <p class="section-index">04 / PRACTICAL EXPERIENCE</p>
+            <h2>CTFs, labs & <span>continuous learning.</span></h2>
+          </div>
+          <p class="section-note">Practical environments help turn isolated concepts into repeatable security workflows.</p>
+        </div>
+
+        <div class="labs-layout">
+          <article class="lab-main reveal">
+            <div class="lab-logo">THM</div>
+            <div>
+              <p class="eyebrow-mini">TRYHACKME</p>
+              <h3>Pre-Security Learning Path</h3>
+              <p>
+                Completed foundational training across Linux, networking, web concepts,
+                and cybersecurity fundamentals through hands-on rooms and exercises.
+              </p>
+            </div>
+          </article>
+
+          <article class="ctf-card reveal">
+            <div class="ctf-head">
+              <span class="ctf-symbol">⚑</span>
+              <div>
+                <p class="eyebrow-mini">CAPTURE THE FLAG</p>
+                <h3>LavenderBliss🪻</h3>
+              </div>
+            </div>
+            <div class="ctf-grid">
+              <span>OSINT</span><span>Digital Forensics</span><span>Steganography</span>
+              <span>Web Security</span><span>Network Analysis</span><span>Cryptography</span>
+              <span>Reconnaissance</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="tool-cloud reveal" aria-label="Tools I use">
+          <div class="tool-row">
+            <span>Kali Linux</span><span>Nmap</span><span>Wireshark</span><span>NetworkMiner</span>
+            <span>Burp Suite</span><span>ffuf</span><span>dirsearch</span><span>John</span>
+            <span>CyberChef</span><span>Volatility</span><span>Autopsy</span><span>FTK Imager</span>
+            <span>ALEAPP</span><span>ExifTool</span><span>Binwalk</span><span>Steghide</span>
+            <span>zsteg</span><span>Metasploit</span><span>Packet Tracer</span><span>VirtualBox</span>
+            <span>Docker</span><span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="education">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <p class="section-index">05 / EDUCATION</p>
+            <h2>Academic <span>foundation.</span></h2>
+          </div>
+        </div>
+
+        <div class="education-card reveal">
+          <div class="edu-line"></div>
+          <div class="edu-year">2024 — 2027</div>
+          <div class="edu-content">
+            <p class="eyebrow-mini">BSC (HONS) ETHICAL HACKING & CYBER SECURITY</p>
+            <h3>Coventry University</h3>
+            <p class="edu-place">Softwarica College of IT & E-Commerce · Kathmandu, Nepal</p>
+            <div class="edu-topics">
+              <span>Ethical Hacking</span><span>Digital Forensics</span><span>Network Security</span>
+              <span>Information Security</span><span>Secure Programming</span><span>Security Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card reveal">
+            <p class="eyebrow-mini">CURRENTLY LEARNING</p>
+            <h3>Deepening practical security skills</h3>
+            <div class="vertical-list">
+              <span>Penetration Testing</span>
+              <span>Network Security</span>
+              <span>Digital Forensics</span>
+              <span>Active Directory Security</span>
+              <span>Incident Response</span>
+              <span>Web Application Security</span>
+            </div>
+          </article>
+
+          <article class="info-card reveal">
+            <p class="eyebrow-mini">TECHNICAL ENVIRONMENT</p>
+            <h3>Platforms I work in</h3>
+            <div class="vertical-list">
+              <span>Kali Linux via WSL</span>
+              <span>Kali & Ubuntu virtual machines</span>
+              <span>Docker & Docker Compose</span>
+              <span>MySQL & phpMyAdmin</span>
+              <span>DVWA & VirtualBox</span>
+              <span>Windows</span>
+            </div>
+          </article>
+
+          <article class="info-card reveal">
+            <p class="eyebrow-mini">CERTIFICATION</p>
+            <h3>TryHackMe Pre-Security</h3>
+            <p>
+              Foundational hands-on learning in cybersecurity, networking, Linux,
+              web technologies, and security concepts.
+            </p>
+            <div class="certificate-mark">✓</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell panel-section">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <p class="section-index">06 / OTHER SKILLS</p>
+            <h2>Beyond the <span>terminal.</span></h2>
+          </div>
+          <p class="section-note">Communication and presentation skills matter when security findings need to become clear decisions.</p>
+        </div>
+
+        <div class="soft-skills reveal">
+          <div class="meter"><div><span>Microsoft Word</span><b>9.5/10</b></div><i style="--score:95%"></i></div>
+          <div class="meter"><div><span>Microsoft PowerPoint</span><b>9/10</b></div><i style="--score:90%"></i></div>
+          <div class="meter"><div><span>Canva</span><b>8/10</b></div><i style="--score:80%"></i></div>
+          <div class="meter"><div><span>Social Media</span><b>8/10</b></div><i style="--score:80%"></i></div>
+          <div class="meter"><div><span>Microsoft Excel</span><b>7/10</b></div><i style="--score:70%"></i></div>
+          <div class="meter"><div><span>Communication & Presentation</span><b>Strong</b></div><i style="--score:86%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="section-index">07 / CONTACT</p>
+          <h2>Let's build, investigate, and <span>secure.</span></h2>
+          <p>
+            I am interested in internships, security projects, CTF collaboration,
+            and opportunities that help me grow toward a Security Analyst or
+            Network Security role.
+          </p>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="contact-person">
+            <div class="avatar">KP</div>
+            <div>
+              <h3>Khushi Pudasaini</h3>
+              <p>Kathmandu, Nepal</p>
+            </div>
+          </div>
+
+          <a class="contact-link" href="https://linkedin.com/in/khushi-pudasaini-4a3a46352" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span><b>↗</b>
+          </a>
+          <a class="contact-link placeholder" href="#" aria-label="GitHub profile to be added">
+            <span>GitHub <small>add profile</small></span><b>↗</b>
+          </a>
+          <a class="contact-link placeholder" href="#" aria-label="TryHackMe profile to be added">
+            <span>TryHackMe <small>add profile</small></span><b>↗</b>
+          </a>
+          <a class="contact-link placeholder" href="#" aria-label="Hack The Box profile to be added">
+            <span>Hack The Box <small>add profile</small></span><b>↗</b>
+          </a>
+          <a class="contact-link placeholder" href="#" aria-label="Email to be added">
+            <span>Email <small>add address</small></span><b>↗</b>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Khushi Pudasaini</p>
+      <p class="mono">built with HTML · CSS · JS · Nginx · Docker</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
