@@ -29,6 +29,20 @@ jobs:
       - name: Test portfolio
         run: curl --fail http://localhost:8083
 
+      - name: Verify OWASP D01 - Non-root User
+        run: |
+          echo "Checking container UID..."
+          docker compose exec -T portfolio id
+
+          echo "Verifying non-root user..."
+          docker compose exec -T portfolio sh -c 'test "$(id -u)" -eq 101'
+
+          echo "Checking privilege escalation protection..."
+          docker compose exec -T portfolio sh -c 'grep -q "^NoNewPrivs:[[:space:]]*1" /proc/self/status'
+
+          echo "OWASP D01 verification passed!"
+
+
       - name: Show running containers
         run: docker compose ps
 
